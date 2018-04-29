@@ -1,5 +1,6 @@
 module.exports = {
     googleClientID: 'MYGOOGLECLIENTID',
     googleClientSecret: 'MYGOOGLECLIENTSECRET',
-    mongoURI: 'MONGOURI'
+    mongoURI: 'MONGOURI',
+    cookieKey: 'COOKIEKEY'
 }
