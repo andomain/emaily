@@ -1,6 +1,11 @@
 {
+    "env": {
+        "browser": true,
+        "node": true
+    },
     "extends": "airbnb",
     "rules": {
-        "indent": ["error", 4]
+        "indent": ["error", 4],
+        "react/jsx-indent": ["error", 4]
     }
 }
