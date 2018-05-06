@@ -13,16 +13,14 @@ const PORT = process.env.PORT || 5000;
 
 const app = express();
 
-app.use(
-    cookieSession({
-        maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
-        keys: [keys.cookieKey]
-    })
-);
+app.use(cookieSession({
+    maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
+    keys: [keys.cookieKey],
+}));
 
 app.use(passport.initialize());
 app.use(passport.session());
 
-require('./routes/auth-routes')(app)
+require('./routes/auth-routes')(app);
 
 app.listen(PORT);
