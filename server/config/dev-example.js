@@ -3,4 +3,6 @@ module.exports = {
     googleClientSecret: 'MYGOOGLECLIENTSECRET',
     mongoURI: 'MONGOURI',
     cookieKey: 'COOKIEKEY',
+    stripePublishableKey: 'PUBKEY',
+    stripeSecretKey: 'SECRETKEY',
 };

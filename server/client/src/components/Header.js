@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 import PropTypes from 'prop-types';
 
+import Payments from './Payments';
+
 class Header extends Component {
     renderContent() {
         switch (this.props.auth) {
@@ -14,9 +16,13 @@ class Header extends Component {
                 <li><a href="/auth/google">Log in with Google</a></li>
             );
         default:
-            return (
-                <li><a href="/api/logout">Log out</a></li>
-            );
+            return [
+                <li key="payment"><Payments /></li>,
+                <li key="count" style={{ margin: '0 10px' }}>
+                    Credits: { this.props.auth.credits }
+                </li>,
+                <li key="logout"><a href="/api/logout">Log out</a></li>,
+            ];
         }
     }
 
