@@ -2750,7 +2750,7 @@ sendgrid-rest@^2.3.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/sendgrid-rest/-/sendgrid-rest-2.4.0.tgz#88e11a86375ec0e14b5faf1b4a0a191639ce90ef"
 
-sendgrid@^5.1.2:
+sendgrid@^5.2.3:
   version "5.2.3"
   resolved "https://registry.yarnpkg.com/sendgrid/-/sendgrid-5.2.3.tgz#37cd28ddd93fca2d3fa7dda10a323b1f43ffecfc"
   dependencies:
