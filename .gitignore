@@ -1,4 +1,4 @@
 node_modules
-server/config/dev.js
-server/client/.env
-server/client/.env.development
+config/dev.js
+client/.env
+client/.env.development
