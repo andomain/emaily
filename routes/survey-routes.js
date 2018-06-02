@@ -15,7 +15,7 @@ module.exports = (app) => {
             body,
             recipients,
         } = req.body;
-        
+      
         const survey = new Survey({
             title,
             subject,
@@ -26,5 +26,6 @@ module.exports = (app) => {
         });
 
         const mailer = new Mailer(survey, surveyTemplate(survey));
+        mailer.send();
     });
 }
