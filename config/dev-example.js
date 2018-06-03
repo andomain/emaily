@@ -6,4 +6,5 @@ module.exports = {
     stripePublishableKey: 'PUBKEY',
     stripeSecretKey: 'SECRETKEY',
     sendGridKey: '##YOURKEY##',
+    redirectDomain: '###REDIRECT###',
 };
