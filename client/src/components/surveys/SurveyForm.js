@@ -10,11 +10,11 @@ import FIELDS from './formFields';
 
 class SurveyForm extends Component {
     renderFields() {
-        return _.map(FIELDS, ({label, name}) => {
-            return (<Field key={`key-${name}`} component={SurveyField} type="text" label={label} name={name} />);
-        })
-    }
-    
+        return _.map(FIELDS, ({ label, name }) => (
+            <Field key={`key-${name}`} component={SurveyField} type="text" label={label} name={name} />
+        ))
+    };
+
     render() {
         return (
             <div>
