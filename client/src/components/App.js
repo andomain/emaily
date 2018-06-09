@@ -6,10 +6,9 @@ import PropTypes from 'prop-types';
 import * as actions from '../actions';
 
 import Header from './Header';
+import Dashboard from './Dashboard';
 import Landing from './Landing';
-
-const Dashboard = () => <h2>Dashboard</h2>;
-const SurveyNew = () => <h2>SurveyNew</h2>;
+import SurveyNew from './surveys/SurveyNew';
 
 class App extends Component {
     componentDidMount() {
@@ -18,16 +17,16 @@ class App extends Component {
 
     render() {
         return (
-            <div className="container">
                 <BrowserRouter>
-                    <div>
-                        <Header />
-                        <Route exact path="/" component={Landing} />
-                        <Route exact path="/surveys" component={Dashboard} />
-                        <Route path="/surveys/new" component={SurveyNew} />
+                    <div className="container">
+                        <div>
+                            <Header />
+                            <Route exact path="/" component={Landing} />
+                            <Route exact path="/surveys" component={Dashboard} />
+                            <Route path="/surveys/new" component={SurveyNew} />
+                        </div>
                     </div>
                 </BrowserRouter>
-            </div>
         );
     }
 }
